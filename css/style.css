@@ -1,0 +1,50 @@
+body {
+    background-color: #fafafa; 
+    font-family: 'Roboto Mono', monospace;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 27px;
+    margin: 0 0 5px
+}
+select {
+    border-radius: 5px;
+    display: block;
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.container {
+    background-color: #ffe9e3;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+}
+.city {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.city:last-child {
+    border: none;
+}
+.time {
+    font-size: 45px;
+    font-weight: 700;
+}
+.time small {
+    font-size: 23px;
+    vertical-align: middle;
+}
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+

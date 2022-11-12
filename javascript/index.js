@@ -52,3 +52,12 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+
+function changeTheme () {
+    let body = document.querySelector("body");
+    body.classList.toggle("dark");
+}
+
+let themeButton = document.querySelector(".theme-button");
+themeButton.addEventListener("click", changeTheme);

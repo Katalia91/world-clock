@@ -1,27 +1,31 @@
 :root {
     --light-text: white;
-    --light-bg: rgba(235, 195, 127, 0.839);
+   /* --light-bg: rgba(235, 195, 127, 0.839);*/
+   --light-bg: #fcc361;
     --dark-text: black;
     --dark-bg: black;
     --light-link: rgb(160, 24, 160);
     --dark-link: rgba(75, 49, 5, 0.839);
 }
 
-html, body {
-    height:100%;
-} 
+html {
+    min-height: 100%;
+ }
 
+* {
+    font-family: 'Roboto Mono', monospace;
+}
 body {
     background-color: #fafafa; 
     font-family: 'Roboto Mono', monospace;
     background-image: url("https://images.pexels.com/photos/277371/pexels-photo-277371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
     background-repeat: no-repeat;
+    background-position: 100% 100%;
     background-size: cover;
-    background-position: center;
-    min-height: 100%; 
-    overflow: hidden;
+    min-height: 100vh; 
 }
 h1 {
+    font-size: 40px;
     text-align: center;
 }
 h2 {
@@ -45,8 +49,7 @@ select {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     max-width: 600px;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 50px auto;
     padding: 50px;
 }
 .city {
@@ -68,14 +71,14 @@ select {
     vertical-align: middle;
 }
 footer {
-    margin-top: 30px;
+  /*  margin-top: 30px;*/
     text-align: center;
-    background-color: var(--light-bg);
+  /*  background-color: var(--light-bg);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 15px 50px;
+    max-width: 600px; */
+    margin-top: 35px;
+  /*  padding: 15px 50px;*/
 }
 
 body.dark {
@@ -87,7 +90,7 @@ body.dark {
     color: var(--light-text);
 }
 
-.dark footer {
+/*.dark footer {
     color: var(--light-text);
     background-color: var(--dark-bg);
     border-radius: 5px;
@@ -95,8 +98,47 @@ body.dark {
     max-width: 600px;
     margin: 20px auto;
     padding: 15px 50px;
-}
+}*/
 
 .dark a {
     color: var(--light-link);
+}
+
+.theme-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.theme-button:hover {
+ /*   padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: white;
+    color: var(--dark-text); */
+    cursor: pointer;
+} 
+
+.dark .theme-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: white;
+    color: var(--dark-text);
+}
+
+ .dark .theme-button:hover {
+   /* padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: black;
+    color: white; */
+    cursor: pointer;
+} 
+span {
+    display: flex;
 }

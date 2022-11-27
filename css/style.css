@@ -124,3 +124,9 @@ body.dark {
 span {
     display: flex;
 }
+
+.remove-btn {
+    padding: 0px;
+    background: none;
+    border: 0px;
+}

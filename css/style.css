@@ -130,3 +130,7 @@ span {
     background: none;
     border: 0px;
 }
+
+.remove-btn:hover {
+    cursor: pointer;
+}
